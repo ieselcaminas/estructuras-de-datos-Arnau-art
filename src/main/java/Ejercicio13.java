@@ -29,7 +29,7 @@ public class Ejercicio13 {
 
             // 🟢 SI ADIVINA LA PALABRA ENTERA → GANÓ
             if (entrada.equals(palabraOculta)) {
-                System.out.println("\n🎉 ¡HAS GANADO! Era la palabra completa.");
+                System.out.println("\n ¡HAS GANADO! Era la palabra completa.");
                 break;
             }
 
