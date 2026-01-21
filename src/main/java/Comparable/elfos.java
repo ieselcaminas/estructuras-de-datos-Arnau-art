@@ -60,10 +60,10 @@ public class elfos {
     public static void main(String[] args) {
         List<regalo> regalos = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        while(true){
+
             System.out.print("Cuantos niños hay? ");
             int n = input.nextInt();
-            if(n == 0) break;
+
             for(int i = 0; i < n; i++){
                 System.out.println("introduce la puntuacion");
                 int prioridad = input.nextInt();
@@ -76,8 +76,7 @@ public class elfos {
                 System.out.println(regalo.toString());
             }
             System.out.println("---");
-            break;
-        }
+
         input.close();
     }
 }

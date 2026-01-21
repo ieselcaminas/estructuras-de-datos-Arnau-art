@@ -5,9 +5,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-
-
     public class Anagrama {
 
         public static void main(String[] args) throws IOException {
@@ -31,7 +28,7 @@ import java.util.Map;
 
             // Imprimir todos los grupos de anagramas
             for (ArrayList<String> grupo : mapa.values()) {
-                System.out.println(grupo);
+                System.out.println( grupo);
             }
         }
 

@@ -11,15 +11,12 @@ public class Botin2 {
     }
     public static Map<Integer,ArrayList<Integer>> repartirbotin(int cuantos, ArrayList<Integer> billetes){
     Map<Integer,ArrayList<Integer>> botin = new HashMap<>();
-    ArrayList<Integer> reparto = new ArrayList<>();
     for(int i=0;i<billetes.size();i++){
         int indice = i % cuantos;
-        reparto = botin.get(indice);
-        if(reparto==null){
-            reparto = new ArrayList<>();
-        }
-        reparto.add(billetes.get(i));
-        botin.put(indice,reparto);
+        // If the key doesn't exist, getOrDefault will return a new ArrayList,
+        // which is then put back into the map.
+        // If the key exists, it retrieves the existing ArrayList.
+        botin.computeIfAbsent(indice, k -> new ArrayList<>()).add(billetes.get(i));
     }
     return botin;
     }

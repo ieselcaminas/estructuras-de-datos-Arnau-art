@@ -27,7 +27,7 @@ public class Ejercicio4 {
         }
 }
 
-class autor{
+class autor {
     private String nombre;
     private String fechanac;
 

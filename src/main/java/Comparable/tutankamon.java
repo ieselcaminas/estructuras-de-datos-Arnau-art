@@ -61,7 +61,7 @@ public class tutankamon {
     public static void main(String[] args) {
         List<objeto> objetos = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        while(true){
+
             System.out.print("Cuantos objetos hay? ");
             int c = input.nextInt();
             for(int i = 0; i < c; i++){
@@ -73,8 +73,7 @@ public class tutankamon {
                 int v = input.nextInt();
                 objetos.add(new objeto(nombre,p,v));
             }
-            break;
-        }
+
         Collections.sort(objetos);
         for(objeto objeto : objetos){
             System.out.println(objeto);

@@ -61,10 +61,10 @@ public class Felipe {
     public static void main(String[] args) {
         List<tarea> tareas = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        while(true){
+
             System.out.print("Informe cuantas tareas tien Felipe: ");
             int n = input.nextInt();
-            if(n == 0) break;
+
             for(int i = 0; i < n; i++){
                 System.out.println("introduce la prioridad");
                 int prioridad = input.nextInt();
@@ -77,8 +77,7 @@ public class Felipe {
                     System.out.println(tarea.toString());
                 }
                 System.out.println("---");
-                break;
-        }
+
         input.close();
     }
 }
