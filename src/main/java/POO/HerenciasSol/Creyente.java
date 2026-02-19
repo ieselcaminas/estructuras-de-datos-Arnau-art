@@ -1,9 +1,17 @@
 package POO.HerenciasSol;
 
-public abstract class Creyente{
+public class Creyente{
     private Religion religion;
     private  String nombre;
     private String edad;
+
+    public Creyente(Religion religion, String nombre, String edad) {
+        this.religion = religion;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.religion.getCreyentes().add(this);
+
+    }
 
     public Religion getReligion() {
         return religion;
@@ -29,12 +37,6 @@ public abstract class Creyente{
         this.edad = edad;
     }
 
-    public Creyente(Religion religion, String nombre, String edad) {
-        this.religion = religion;
-        this.nombre = nombre;
-        this.edad = edad;
-
-    }
     public void  creer(){
         System.out.println("Hola, soy "+ nombre + ", tengo "+ edad+" años y creo en el" + religion.getNombre());;
     }

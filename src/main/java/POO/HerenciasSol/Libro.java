@@ -3,6 +3,12 @@ package POO.HerenciasSol;
 public class Libro {
     private String titulo;
     private Religion religion;
+    public Libro(String titulo, Religion religion) {
+        this.titulo = titulo;
+        this.religion = religion;
+        this.religion.getLibros().add(this);
+
+    }
 
     public String getTitulo() {
         return titulo;
@@ -19,11 +25,7 @@ public class Libro {
     public void setReligion(Religion religion) {
         this.religion = religion;
     }
-    public Libro(String titulo, Religion religion) {
-        this.titulo = titulo;
-        this.religion = religion;
-        religion.setLibro(this);
-    }
+
 
     @Override
     public String toString() {
