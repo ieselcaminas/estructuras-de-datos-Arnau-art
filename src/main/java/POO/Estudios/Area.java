@@ -17,9 +17,7 @@ public class Area {
         this.nombre = nombre;
         this.asignatura = asignatura;
         this.departamentos = departamentos;
-        for(Departamento departamento: departamentos){
-            departamento.setArea(this);
-        }
+
 
     }
 

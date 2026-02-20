@@ -35,13 +35,8 @@ public class Departamento {
         this.area = area;
         area.getDepartamentos().add(this);
         this.catedras = catedras;
-        for (Catedra catedra: catedras) {
-            catedra.setDepartamento(this);
-        }
         this.professores = professores;
-        for (Profesores professor: professores) {
-            professor.setDepartamento(this);
-        }
+
     }
 
     public List<Catedra> getCatedras() {
